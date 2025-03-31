@@ -14,4 +14,4 @@ def get_days_from_today(date):
     return delta.days
 
 # Приклад використання функції
-print(get_days_from_today("2021-10-09"))
+print(get_days_from_today("2022-02-24"))
