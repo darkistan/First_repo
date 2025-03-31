@@ -1,7 +1,7 @@
 from datetime import datetime
 
 def get_days_from_today(date):
-    # Перетворюємо введену дату в об'єкт datetime
+    # Перетворюємо введену дату 
     given_date = datetime.strptime(date, "%Y-%m-%d")
     
     # Отримуємо поточну дату
