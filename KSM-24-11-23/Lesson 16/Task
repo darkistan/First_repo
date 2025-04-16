@@ -1,0 +1,19 @@
+# 1. Перевірка: чи 10 більше за 9 і одночасно менше за 11
+print(10 > 9 and 10 < 11)
+
+# 2. Температура і теплий одяг
+hasWarmClothes = False
+temperature = 20
+print(temperature < 10 and hasWarmClothes)
+
+# 3. Гра з вишеньками
+cherry1Appears = True
+cherry2Appears = True
+cherry3Appears = True
+print(cherry1Appears and cherry2Appears and cherry3Appears)
+
+# 4. Робітники та роботи на фабриці
+enoughEmployees = True
+enoughRobots = False
+factoryCanWork = enoughEmployees or enoughRobots
+print(factoryCanWork)
