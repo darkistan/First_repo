@@ -1,0 +1,15 @@
+# Сума покупки
+purchase1 = 12345
+purchase2 = 6453
+
+# Розрахунок знижки: якщо більше або дорівнює 10000 → 10%, інакше 5%
+discount1 = 0.10 if purchase1 >= 10000 else 0.05
+discount2 = 0.10 if purchase2 >= 10000 else 0.05
+
+# Підсумкова ціна
+final_price1 = purchase1 * (1 - discount1)
+final_price2 = purchase2 * (1 - discount2)
+
+# Виведення результатів
+print(f"Сума покупки: {purchase1} грн — Знижка: {int(discount1 * 100)}% — До оплати: {final_price1:.2f} грн")
+print(f"Сума покупки: {purchase2} грн — Знижка: {int(discount2 * 100)}% — До оплати: {final_price2:.2f} грн")
