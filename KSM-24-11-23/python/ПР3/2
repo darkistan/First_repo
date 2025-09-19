@@ -1,14 +1,5 @@
-def multiplication_table(start: int = 1, end: int = 10) -> None:
-    """
-    Виводить таблиці множення від start до end (включно).
-    Кожна таблиця в окремому блоці.
-    """
-    for i in range(start, end + 1):
-        print(f"Таблиця множення на {i}:")
-        for j in range(start, end + 1):
-            print(f"{i} x {j} = {i * j}")
-        print()  # порожній рядок між таблицями
-
-# Приклад виклику:
-if __name__ == "__main__":
-    multiplication_table(1, 10)
+for i in range(1, 11):
+    print(f"Таблиця множення на {i}:")
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i * j}")
+    print()  # пустий рядок між таблицями
