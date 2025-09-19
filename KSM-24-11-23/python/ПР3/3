@@ -1,0 +1,39 @@
+def calculator():
+
+    while True:
+        try:
+            a = float(input("Введіть перше число: "))
+            b = float(input("Введіть друге число: "))
+        except ValueError:
+            print("Будь ласка, введіть коректні числа.")
+            continue
+
+        op = input("Введіть операцію (+, -, *, /): ").strip()
+        if op == "+":
+            res = a + b
+        elif op == "-":
+            res = a - b
+        elif op == "*":
+            res = a * b
+        elif op == "/":
+            if b == 0:
+                print("Помилка: ділення на нуль!")
+                cont = input("Бажаєте спробувати ще раз? (так/ні): ").strip().lower()
+                if cont in ("ні", "n", "no"):
+                    break
+                else:
+                    continue
+            res = a / b
+        else:
+            print("Невідома операція. Спробуйте ще раз.")
+            continue
+
+        print(f"Результат: {a} {op} {b} = {res}")
+
+        cont = input("Бажаєте продовжити? (так/ні): ").strip().lower()
+        if cont in ("ні", "n", "no"):
+            print("Калькулятор завершив роботу.")
+            break
+
+if __name__ == "__main__":
+    calculator()
